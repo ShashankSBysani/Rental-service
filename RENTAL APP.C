@@ -1,3 +1,4 @@
+// rental service application
 #include<stdio.h> //header files
 #include<string.h> //string hedar files
 // Function to rent a car
