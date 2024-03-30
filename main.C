@@ -45,12 +45,12 @@ void car_rent()
     scanf("%lld", &rented.customer.number);
     printf("Enter customer pincode: ");
     scanf("%d", &rented.customer.pincode);
-	printf("NO OF DAYS YOU WANT TO RENT:");
-	scanf("%u",&days);
 	printf("BRANDS AVAILABLE");
 	printf("\n'FORD','TATA'',''MERCEDES','AUDI'','ISUZU'\n");// these are the brands available for the renting of cars
 	printf("|*|PER DAY RENT DEPEND ON CAR BRAND|*|\n ||FORD       -  250|| \n ||TATA       -  500|| \n ||MERCEDES   -  650|| \n ||AUDI       -  750|| \n ||ISUZU      -  850|| ");//PRICE OF THE CAR HAS DIFFERENT PRICES
-    strcpy(user_brand, rented.car_name);
+    printf("\nNO OF DAYS YOU WANT TO RENT:");
+	scanf("%u",&days);
+	strcpy(user_brand, rented.car_name);
 	int found = 0;
 	
 	// for loop is used to check every element in array
