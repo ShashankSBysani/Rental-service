@@ -36,6 +36,7 @@ void car_rent()
 	
 	
 	//TAKES INPUT FROM CUSTOMER
+	printf("|| FORD \n|| TATA \n|| MERCEDES \n|| AUDI \n|| ISUZU \n");
     printf("Enter car brand: ");
     scanf("%s", rented.car_name);
     printf("Enter customer name: ");
@@ -51,7 +52,7 @@ void car_rent()
     printf("\nNO OF DAYS YOU WANT TO RENT:");
 	scanf("%u",&days);
 	strcpy(user_brand, rented.car_name);
-	int found = 0;
+	int sucess = 0;
 	
 	// for loop is used to check every element in array
     for(int i = 0; i < 5; i++)
@@ -59,7 +60,7 @@ void car_rent()
         if(strcmp(car_Brand[i], user_brand) == 0)
 		{
             printf("%s IS AVAILABLE FOR RENT.\n", user_brand);
-            found = 1;
+            sucess = 1;
              RENT_PRICE=days*RENT[i];
             printf("\nTOTAL RENT: %d",RENT_PRICE);
             printf("\nCar brand: %s\n", rented.car_name);
@@ -69,7 +70,7 @@ void car_rent()
             break;
         }
     }
-        if (!found) {
+        if (!sucess) {
         printf("%s IS NOT AVAILABLE FOR RENT.\n", user_brand);
         printf("PLEASE SELECT OTHER CAR BRANDS");
     }
@@ -83,6 +84,7 @@ void car_return()
 void display_available_car()
 {
 	printf("Available Car For Rent is\n");
+	printf("FORD \n TATA \n MERCEDES \n AUDI \n ISUZU\n");
 }
 int main()
 {
