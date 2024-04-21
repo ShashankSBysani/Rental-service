@@ -1,0 +1,8 @@
+
+TOTAL RENT: 34
+TOTAL RENT: 17000
+Car brand: TATA
+Customer name: shashank
+
+Customer number: 464646
+Customer pincode: 12

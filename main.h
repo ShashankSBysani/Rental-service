@@ -1,17 +1,18 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 #include<stdio.h> 
-struct details {
+// Used To Store Customer Details
+typedef struct  {
     char customer_name[50];
     long long int number;
     int pincode;
-};
+}details;
 //Used To Store Car Brands
-struct store {
+typedef struct  {
     char car_name[20];
-    struct details customer;
-};
-
+    details customer;
+}store;
+void to_uppercase(char *str);
 void car_rent();
 //FUNCTION TO RETURN CAR
 void car_return();

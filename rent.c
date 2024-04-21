@@ -1,5 +1,6 @@
 #include"main.h"
-
+#include<string.h>
+// Void Function To Rent A Car
 void car_rent()
 {
 //brands available is used to stored in array
@@ -8,11 +9,14 @@ void car_rent()
     char user_brand[20]; // to store the input of user array is used
 	unsigned int days=0;
 	int RENT_PRICE;
-	struct store rented;
+	 store rented;
 	//TAKES INPUT FROM CUSTOMER
-	printf("|| FORD \n|| TATA \n|| MERCEDES \n|| AUDI \n|| ISUZU \n");
-    printf("Enter car brand: ");
+	printf("BRANDS AVAILABLE");
+	printf("\n'FORD','TATA'',''MERCEDES','AUDI'','ISUZU'\n");// these are the brands available for the renting of cars
+	printf("|*|PER DAY RENT DEPEND ON CAR BRAND|*|\n ||FORD       -  250|| \n ||TATA       -  500|| \n ||MERCEDES   -  650|| \n ||AUDI       -  750|| \n ||ISUZU      -  850|| ");//PRICE OF THE CAR HAS DIFFERENT PRICES
+    printf("\nEnter car brand: ");
     scanf("%s", rented.car_name);
+    to_uppercase(rented.car_name);
     printf("Enter customer name: ");
     gets(rented.customer.customer_name);
     fgets(rented.customer.customer_name, sizeof(rented.customer.customer_name), stdin);
@@ -20,14 +24,12 @@ void car_rent()
     scanf("%lld", &rented.customer.number);
     printf("Enter customer pincode: ");
     scanf("%d", &rented.customer.pincode);
-	printf("BRANDS AVAILABLE");
-	printf("\n'FORD','TATA'',''MERCEDES','AUDI'','ISUZU'\n");// these are the brands available for the renting of cars
-	printf("|*|PER DAY RENT DEPEND ON CAR BRAND|*|\n ||FORD       -  250|| \n ||TATA       -  500|| \n ||MERCEDES   -  650|| \n ||AUDI       -  750|| \n ||ISUZU      -  850|| ");//PRICE OF THE CAR HAS DIFFERENT PRICES
-    printf("\nNO OF DAYS YOU WANT TO RENT:");
+	printf("\nNO OF DAYS YOU WANT TO RENT:");
 	scanf("%u",&days);
 	strcpy(user_brand, rented.car_name);
+
 	int sucess = 0;
-	
+
 	// for loop is used to check every element in array
     for(int i = 0; i < 5; i++)
 	 {
@@ -41,7 +43,19 @@ void car_rent()
             printf("Customer name: %s\n", rented.customer.customer_name);
             printf("Customer number: %lld\n", rented.customer.number);
             printf("Customer pincode: %d\n", rented.customer.pincode);
-            break;
+            FILE *data ;
+            data=fopen("rentedcars.txt","a");
+            if(data!=NULL){
+            fprintf(data,"\nTOTAL RENT: %u",days);
+            fprintf(data,"\nTOTAL RENT: %d",RENT_PRICE);
+            fprintf(data,"\nCar brand: %s\n", rented.car_name);
+            fprintf(data,"Customer name: %s\n", rented.customer.customer_name);
+            fprintf(data,"Customer number: %lld\n", rented.customer.number);
+            fprintf(data,"Customer pincode: %d\n", rented.customer.pincode);
+            fclose(data);}
+            else{
+                printf("error in writing");
+            }
         }
     }
         if (!sucess) {
