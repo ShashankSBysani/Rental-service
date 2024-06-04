@@ -3,12 +3,13 @@
 // Void Function To Rent A Car
 void car_rent()
 {
+	int sucess = 0;
+	int RENT_PRICE;
+	unsigned int days=0;
 //brands available is used to stored in array
     char car_Brand[6][20]={"FORD","TATA","MERCEDES","AUDI","ISUZU"};
     int RENT[6]={250,500,650,750,850};
     char user_brand[20]; // to store the input of user array is used
-	unsigned int days=0;
-	int RENT_PRICE;
 	 store rented;
 	//TAKES INPUT FROM CUSTOMER
 	printf("BRANDS AVAILABLE");
@@ -27,8 +28,6 @@ void car_rent()
 	printf("\nNO OF DAYS YOU WANT TO RENT:");
 	scanf("%u",&days);
 	strcpy(user_brand, rented.car_name);
-
-	int sucess = 0;
 
 	// for loop is used to check every element in array
     for(int i = 0; i < 5; i++)

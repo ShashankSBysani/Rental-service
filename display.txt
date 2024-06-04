@@ -4,3 +4,27 @@ TATA     =5
 MERCEDES =2
 AUDI     =4
 ISUZU    =3
+Available Car For Rent is
+FORD     =3
+TATA     =5
+MERCEDES =2
+AUDI     =4
+ISUZU    =3
+Available Car For Rent is
+FORD     =3
+TATA     =5
+MERCEDES =2
+AUDI     =4
+ISUZU    =3
+Available Car For Rent is
+FORD     =3
+TATA     =5
+MERCEDES =2
+AUDI     =4
+ISUZU    =3
+Available Car For Rent is
+FORD     =3
+TATA     =5
+MERCEDES =2
+AUDI     =4
+ISUZU    =3

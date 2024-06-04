@@ -6,3 +6,19 @@ Customer name: shashank
 
 Customer number: 464646
 Customer pincode: 12
+
+TOTAL RENT: 5
+TOTAL RENT: 1250
+Car brand: FORD
+Customer name: sahshank s bysani
+
+Customer number: 7795740687
+Customer pincode: 560023
+
+TOTAL RENT: 2
+TOTAL RENT: 500
+Car brand: FORD
+Customer name: SAHSAHNK
+
+Customer number: 846864646
+Customer pincode: 313331
