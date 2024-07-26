@@ -30,3 +30,11 @@ Customer name: shashank
 
 Customer number: 7762563455
 Customer pincode: 560023
+
+TOTAL RENT: 5
+TOTAL RENT: 2500
+Car brand: TATA
+Customer name: shashank
+
+Customer number: 7795740687
+Customer pincode: 560023
