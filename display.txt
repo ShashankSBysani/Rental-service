@@ -1,5 +1,5 @@
 Available Car For Rent:
-FORD     = 3
+FORD     = 2
 TATA     = 4
 MERCEDES = 2
 AUDI     = 4

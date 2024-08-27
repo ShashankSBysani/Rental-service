@@ -1,6 +1,6 @@
-Total rent: 4
-Total rent: 1000
+Total rent: 54
+Total rent: 13500
 Car brand: FORD
-Customer name: dada
-Customer number: 5416
-Customer pincode: 54654
+Customer name: abhi$
+Customer number: 9
+Customer pincode: 4567
